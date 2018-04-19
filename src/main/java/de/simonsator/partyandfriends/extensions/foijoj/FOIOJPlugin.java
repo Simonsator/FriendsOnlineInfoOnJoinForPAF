@@ -28,6 +28,7 @@ public class FOIOJPlugin extends PAFExtension implements Listener {
 		try {
 			config = new FOIOJConfig(new File(getConfigFolder(), "config.yml"), this).getCreatedConfiguration();
 			getProxy().getPluginManager().registerListener(this, this);
+			registerAsExtension();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
