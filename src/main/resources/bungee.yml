@@ -1,0 +1,6 @@
+name: Friends-Online-Info-On-Join-For-PAF
+version: ${project.version}
+author: Simonsator
+depends: [PartyAndFriends]
+main: de.simonsator.partyandfriends.extensions.foijoj.FOIOJPlugin
+description: Shows all your online friends when you are joining
