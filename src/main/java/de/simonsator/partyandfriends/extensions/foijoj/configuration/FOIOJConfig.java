@@ -16,6 +16,7 @@ public class FOIOJConfig extends ConfigurationCreator {
 	}
 
 	private void loadDefaults() {
+		set("General.ScheduleMessageSeconds", 1);
 		set("Messages.NoFriendsOnline", " &7Currently no friend is online.");
 		set("Messages.FriendsOnline", " &7[FRIEND_COUNT] friend(s) are currently online:LINE_BREAK &7- [FRIENDS]");
 		set("Messages.FriendColor", "&a");
