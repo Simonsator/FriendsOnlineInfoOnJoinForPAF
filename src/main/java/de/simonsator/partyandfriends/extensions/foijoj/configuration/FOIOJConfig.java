@@ -1,5 +1,6 @@
 package de.simonsator.partyandfriends.extensions.foijoj.configuration;
 
+import de.simonsator.partyandfriends.api.PAFExtension;
 import de.simonsator.partyandfriends.utilities.ConfigurationCreator;
 import net.md_5.bungee.api.plugin.Plugin;
 
@@ -7,12 +8,12 @@ import java.io.File;
 import java.io.IOException;
 
 public class FOIOJConfig extends ConfigurationCreator {
-	public FOIOJConfig(File file, Plugin pPlugin) throws IOException {
-		super(file, pPlugin);
+	public FOIOJConfig(File file, PAFExtension pPlugin) throws IOException {
+		super(file, pPlugin, true);
 		readFile();
 		loadDefaults();
 		saveFile();
-		process(configuration);
+		process();
 	}
 
 	private void loadDefaults() {
